@@ -31,12 +31,14 @@
 
 .text-pink-outlined {
     color: rgb(var(--clr-light-pink));
+
     text-shadow:
         -1px -1px 0 rgb(var(--clr-dark-pink)),
         1px -1px 0 rgb(var(--clr-dark-pink)),
         -1px 1px 0 rgb(var(--clr-dark-pink)),
         1px 1px 0 rgb(var(--clr-dark-pink));
-    }
+}
+
 @media (max-width: 35em) {
     .text-pink-outlined {
         color: rgb(var(--clr-dark-pink));

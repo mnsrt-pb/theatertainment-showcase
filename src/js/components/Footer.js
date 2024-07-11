@@ -23,7 +23,7 @@ export default function Footer() {
                 </a>
             </div>
             <hr />
-            <p className='fs-300 text-dark-pink'>©2024 Monserat Pavia-Bravo</p>
+            <p className='fs-300 text-dark-pink'>© 2024 Monserat Pavia-Bravo</p>
         </footer>
     )
 }

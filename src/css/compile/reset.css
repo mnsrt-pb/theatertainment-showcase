@@ -44,13 +44,12 @@ h3,
 h4,
 button {
     line-height: 1.1;
+    cursor: pointer;
 }
 
 /* Balance text wrapping on headings */
 h1,
-h2,
-h3,
-h4 {
+h2 {
     text-wrap: balance;
 }
 
