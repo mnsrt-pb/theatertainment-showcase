@@ -1,7 +1,9 @@
 import React from 'react'
 
 export default function Carousel({data, path}){
-    const gifs = data.map(data => <img key={data.title} src={`${process.env.PUBLIC_URL}/gifs/${path}${data.gif}`} title={data.title} />)
+    const id = React.useId()
+    
+    const gifs = data.map((data, i) => <img key={`${id}-gif-${i}`} src={`${process.env.PUBLIC_URL}/gifs/${path}${data.gif}`} title={data.title} />)
 
     const [index, setIndex] = React.useState(0)
     const [fade, setFade] = React.useState(false)
@@ -55,7 +57,7 @@ export default function Carousel({data, path}){
                 <div>
                     <div className='indicators' role='tablist' aria-label="Carousel slides">
                         {data.map((_, i) => (
-                            <button key={i} role="tab" aria-controls={`tab-${i + 1}`}
+                            <button key={`${id}-indicator-${i}`} role="tab" aria-controls={`tab-${i + 1}`}
                             aria-selected={i === index} aria-label={`tab ${i + 1}`}
                             onClick={() => handleTab(i)}></button>))}
                     </div>

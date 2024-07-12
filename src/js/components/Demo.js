@@ -20,7 +20,7 @@ export default function Demo() {
                 <button aria-selected={type === 'employee'} role="tab" aria-controls="employee-tab" onClick={() => handleTab('employee')}>Employee</button>
                 <button aria-selected={type === 'tests'} role="tab" aria-controls="tests-tab" onClick={() => handleTab('tests')}>Tests</button>
             </div>
-            <div class='demo-content'>
+            <div className='demo-content'>
                 {
                     type === 'guest' && 
                     <div id='guest' className='gifs-container'>
