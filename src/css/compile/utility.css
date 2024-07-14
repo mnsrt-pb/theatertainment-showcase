@@ -24,6 +24,7 @@
 .bg-light-pink { background-color: rgb( var(--clr-light-pink) );}
 
 .text-dark { color: rgb( var(--clr-dark) );}
+.text-dark-disabled { color: rgba( var(--clr-dark), .7 );}
 .text-light { color: rgb( var(--clr-light) );}
 .text-dark-pink { color: rgb( var(--clr-dark-pink) );}
 .text-light-pink { color: rgb( var(--clr-light-pink) );}
@@ -62,4 +63,6 @@
 .fw-500 { font-weight: 500; }
 
 .uppercase { text-transform: uppercase; }
+.capitalize { text-transform: capitalize; }
 .text-center { text-align: center; }
+.text-left { text-align: start; }

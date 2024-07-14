@@ -1,5 +1,5 @@
 import React from 'react'
-import data from '../data'
+import data from '../demo_data'
 import Carousel from "./Carousel";
 
 export default function Demo() {

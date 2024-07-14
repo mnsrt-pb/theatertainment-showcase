@@ -3,7 +3,7 @@ import React from 'react'
 export default function Carousel({data, path}){
     const id = React.useId()
     
-    const gifs = data.map((data, i) => <img key={`${id}-gif-${i}`} src={`${process.env.PUBLIC_URL}/gifs/${path}${data.gif}`} title={data.title} />)
+    const gifs = data.map((datum, i) => <img key={`${id}-gif-${i}`} src={`${process.env.PUBLIC_URL}/gifs/${path}${datum.gif}`} title={datum.title} />)
 
     const [index, setIndex] = React.useState(0)
     const [fade, setFade] = React.useState(false)
@@ -40,7 +40,7 @@ export default function Carousel({data, path}){
                     <button disabled aria-disabled="true">&lt;</button>
                 }
                 <div className={`fade-item ${fade ? 'fade' : ''}`}>
-                    <h3 className='fw-600'>{data[index].title}</h3>
+                    <h3 className='fw-500'>{data[index].title}</h3>
                     {data[index].description && <p>{data[index].description}</p>}
                     <br />
                     <div >

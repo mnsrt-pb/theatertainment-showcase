@@ -170,6 +170,7 @@ div {
 .bg-light-pink { background-color: rgb( var(--clr-light-pink) );}
 
 .text-dark { color: rgb( var(--clr-dark) );}
+.text-dark-disabled { color: rgba( var(--clr-dark), .7 );}
 .text-light { color: rgb( var(--clr-light) );}
 .text-dark-pink { color: rgb( var(--clr-dark-pink) );}
 .text-light-pink { color: rgb( var(--clr-light-pink) );}
@@ -208,8 +209,9 @@ div {
 .fw-500 { font-weight: 500; }
 
 .uppercase { text-transform: uppercase; }
+.capitalize { text-transform: capitalize; }
 .text-center { text-align: center; }
-
+.text-left { text-align: start; }
 @import 'bootstrap-icons/font/bootstrap-icons.css';
 
 body {
@@ -389,6 +391,9 @@ header {
 .command-icon-list > li {
     position: relative;
     padding-left: 2rem;
+}
+
+.command-icon-list:not(.not-bold) > li{
     font-weight: 600;
 }
 
@@ -405,6 +410,7 @@ header {
 
 .command-icon-list > li > ul > li {
     margin-bottom: 1rem;
+    margin-left: 1.5rem;
     font-weight: 400;
 }
 
@@ -428,8 +434,14 @@ h2 {
     margin-bottom: 1rem;
 }
 
+h3 {
+    font-size: var(--fs-500);
+    font-weight: 600;
+    color: rgb(var(--clr-dark-pink));
+}
+
 hr {
-    border: solid .5px rgb(var(--clr-light-pink));
+    border: solid .5px rgb(var(--clr-dark-pink));
 }
 
 #home > a {
@@ -440,12 +452,20 @@ hr {
     font-size: 1.125rem;
 }
 
+#home > h2 {
+    margin-bottom: 0;
+}
+
 main {
     padding-top: 2rem;
     margin-inline: 1rem;
     display: flex;
     flex-direction: column;
     gap: 10rem;
+}
+
+p:has(+ .command-icon-list) {
+    margin-bottom: 0;
 }
 
 p + ul {
@@ -468,6 +488,11 @@ p + ul {
     color: rgb(var(--clr-light-pink));
 }
 
+.unit {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+}
 
 @media (max-width: 28.2rem) {
     .carousel {

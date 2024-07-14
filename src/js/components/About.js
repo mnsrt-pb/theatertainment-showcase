@@ -25,14 +25,6 @@ export default function About() {
                     Creating this project was incredibly fun, and I'm really proud of the result. In the near future, I plan 
                     to use React for the front-end to enhance user experience. 
                 </p>
-                <p className='fw-600'>Technologies used:</p>
-                <ul className='command-icon-list'>
-                    <li>Flask</li>
-                    <li>SQLAlchemy</li>
-                    <li>TMDB API</li>
-                    <li>tmdbsimple (API calls)</li>
-                    <li>Bootstrap</li>
-                </ul>
             </div>
         </section>
     )

@@ -4,6 +4,7 @@ import About from './js/components/About';
 import Features from './js/components/Features';
 import Demo from './js/components/Demo';
 import Footer from './js/components/Footer';
+import Technical from './js/components/Technical';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Home /> 
         <About /> 
         <Features /> 
+        <Technical /> 
         <Demo /> 
         <Footer /> 
       </main>

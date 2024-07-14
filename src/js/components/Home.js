@@ -4,7 +4,9 @@ export default function Home(){
     return (
         <div id='home' className='grid-container grid-container--home svg-links'>
             <h1 className='fs-700 text-pink-outlined fw-500'>TheaterTainment</h1>
-            <p>A web-based application designed to emulate the functionalities of Cinemark. TheaterTainment is a theater with a single, unspecified location, offering a comprehensive online experience similar to that of Cinemark.</p>
+            <h2 className='fs-400 text-dark-pink fw-600'>Reimagining Cinemark with a Unique Twist</h2>
+            <p>TheaterTainment is a theater with a single, unspecified location, offering a comprehensive online experience.</p>
+            <p>A full-stack application designed to emulate the functionalities of Cinemark.</p>
 
             <a href='https://github.com/mnsrt-pb/TheaterTainment' aria-label="Visit github repo">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-github" viewBox="0 0 16 16">
