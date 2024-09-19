@@ -87,7 +87,7 @@ const data = {
                     items: [
                                 {
                                     short: 'Client-Server Architecture',
-                                    description: 'The application follows a client-server model where the front end communicates with the Flask backend to manage data and user requests.'
+                                    description: 'The application follows a client-server model where the frontend communicates with the Flask backend to manage data and user requests.'
                                 },
                                 {
                                     short: 'Database Management',
@@ -103,7 +103,7 @@ const data = {
                 {
                     items: [{
                             short: 'React Frontend',
-                            description: 'Transitioning to a React-based front-end to create a more interactive user experience, including real-time updates and improved state management.'
+                            description: 'Transitioning to a React-based frontend to create a more interactive user experience, including real-time updates and improved state management.'
                         }]
                 }
         ]

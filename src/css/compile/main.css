@@ -254,6 +254,10 @@ p:has(+ .command-icon-list) {
     margin-bottom: 0;
 }
 
+p:not(.ignore-default-align) , li {
+    text-align: justify;
+}
+
 p + ul {
     margin-top: 0;
     margin-left: 1rem;
